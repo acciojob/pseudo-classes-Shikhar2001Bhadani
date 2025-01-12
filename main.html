@@ -3,10 +3,59 @@
 <html>
 
 <head>
+	<style>
+		:root{
+			--page-background-color:rgb(135, 206, 235);
+			--list-background-color:gray;
+		}
+		 body {
+	      background-color: var(--page-background-color);
+		 }
+		article p:first-child{
+			background-color:black;
+			color:white;
+		}
+		article p:nth-child(2){
+			color:black;
+		}
+		article p:last-child{
+			color:red;
+		}
+		ul{
+			background-color:var(--list-background-color);
+			width:50%;
+			padding:0px;
+			margin:15px;
+		}
+		ul li:first-child, li:last-child{
+		font-size:22px;
+		}
+		ul li:nth-child(odd){
+		background-color:white;
+		}
+		ul li:nth-last-child(3){
+		background-color:pink;
+		}
+	</style>
+	<title>Understanding Pseudo Classes</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="body">
+	<article>
+	<p>First Paragraph</p>
+	<p>Second Paragraph</p>
+	<p>Third Paragraph</p>
+	</article>
+	<ul>
+		<li>First</li>
+		<li>Second</li>
+		<li>Third</li>
+		<li>Fourth</li>
+		<li>Fifth</li>
+		
+	</ul>
+	
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
